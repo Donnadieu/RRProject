@@ -1,0 +1,7 @@
+<h1> Welcome </h1>
+
+<ol> Students
+	<% @student.each do |s| %>
+		<li><%= link_to s.FirstName + " " + s.LastName, student_path(s.id) %> </li>
+	<% end %>
+</ol>

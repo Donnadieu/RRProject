@@ -1,0 +1,39 @@
+<h1>New Form</h1>
+
+<%= form_for(@student, url: signup_path) do |s| %>
+	<%= s.label :FirstName, "First Name" %>
+	<%= s.text_field :FirstName %>
+	<br>
+	<%= s.label :LastName, "Last Name" %>
+	<%= s.text_field :LastName %>
+	<br>
+	<%= s.label :NickName, "Nickname" %>
+	<%= s.text_field :NickName %>
+	<br>
+	<%= s.label :EmailAddress, "Email Address" %>
+	<%= s.text_field :EmailAddress %>
+	<br>
+	<%= s.label :Birthday, "Birthday" %>
+	<%= s.text_field :Birthday %>
+	<br>
+	<%= s.label :MedicalNotes, "Medical Notes" %>
+	<%= s.text_field :MedicalNotes %>
+	<br>
+	<%= s.label :Grade, "Grade" %>
+	<%= s.text_field :Grade %>
+	<br>
+	<%= s.label :School, "School" %>
+	<%= s.text_field :School %>
+	<br>
+	<%= s.label :Gender, "Gender" %>
+	<%= s.text_field :Gender %>
+	<br>
+	<%= s.submit "Submit Information" %>
+<% end %>
+
+
+
+
+
+
+

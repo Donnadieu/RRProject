@@ -1,0 +1,30 @@
+<h1> Table's Page </h1>
+
+<%= stylesheet_link_tag "/assets/students.css" %>
+
+<table>
+	<thead>
+		<th> First Name </th>
+		<th> Last Name </th>
+		<th> Nick Name </th>
+		<th> Email Address </th>
+		<th> Birthday </th>
+		<th> Medical Notes </th>
+		<th> Grade </th>
+		<th> School </th>
+		<th> Gender </th>
+	<% Array(@student).each do |s| %>
+		<tr>
+			<td> <%= s.FirstName %> </td>
+			<td> <%= s.LastName %> </td>
+			<td> <%= s.NickName %> </td>
+			<td> <%= s.EmailAddress %> </td>
+			<td> <%= s.Birthday %> </td>
+			<td> <%= s.MedicalNotes %> </td>
+			<td> <%= s.Grade %> </td>
+			<td> <%= s.School %> </td>
+			<td> <%= s.Gender %> </td>
+		</tr>
+	<% end %>
+	</thead>
+</table>
