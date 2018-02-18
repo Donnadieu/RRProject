@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  Student_id: 1
+  ClassGroup_id: 1
+
+two:
+  Student_id: 1
+  ClassGroup_id: 1

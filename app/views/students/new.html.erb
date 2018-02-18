@@ -1,5 +1,7 @@
 <h1>New Form</h1>
 
+<%= link_to "Index", students_path %>
+
 <%= form_for(@student, url: signup_path) do |s| %>
 	<%= s.label :FirstName, "First Name" %>
 	<%= s.text_field :FirstName %>

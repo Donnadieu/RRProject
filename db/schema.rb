@@ -10,7 +10,43 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_02_09_204209) do
+ActiveRecord::Schema.define(version: 2018_02_18_191354) do
+
+  create_table "class_groups", force: :cascade do |t|
+    t.string "Name"
+    t.string "Model"
+    t.text "Description"
+    t.string "SkillLevel"
+    t.string "TechUsed"
+    t.string "Special"
+    t.string "Grades"
+    t.string "Competition"
+    t.string "Session"
+    t.string "CalendarYear"
+    t.string "Facility"
+    t.string "Room"
+    t.string "InstructorFirstName"
+    t.string "InstrutorLastName"
+    t.string "InstructorEmail"
+    t.string "InstructorPhone"
+    t.string "DaysOfWeek"
+    t.string "WeekOfYear"
+    t.time "StartTime"
+    t.time "EndTime"
+    t.integer "DurationTime"
+    t.date "StartDate"
+    t.date "EndDate"
+    t.integer "DurationWeeks"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "enrollments", force: :cascade do |t|
+    t.integer "Student_id"
+    t.integer "ClassGroup_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "students", force: :cascade do |t|
     t.string "FirstName"
