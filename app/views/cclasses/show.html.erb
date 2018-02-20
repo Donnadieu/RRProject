@@ -1,0 +1,65 @@
+<h1> Class Table's Page </h1>
+
+<%= stylesheet_link_tag "/assets/students.css" %>
+
+<table>
+	<thead>
+		<th> Class Name </th>
+		<th> Model </th>
+		<th> Description </th>
+		<th> Skill Level </th>
+		<th> Technology Used </th>
+		<th> Special </th>
+		<th> Grades </th>
+		<th> Competition </th>
+		<th> Session </th>
+		<th> Year </th>
+		<th> Facility </th>
+		<th> Room </th>
+		<th> Instructor First Name </th>
+		<th> Instructor Last Name </th>
+		<th> Instructor Email </th>
+		<th> Instructor Phone </th>
+		<th> Days </th>
+		<th> Weeks </th>
+		<th> Start Time </th>
+		<th> End Time </th>
+		<th> Duration </th>
+		<th> Start date </th>
+		<th> End Date </th>
+		<th> Duration in weeks </th>
+	<% Array(@cclass).each do |c| %>
+		<tr>
+			<td> <%= c.Class_Name %> </td>
+			<td> <%= c.Model %> </td>
+			<td> <%= c.Description %> </td>
+			<td> <%= c.SkillLevel %> </td>
+			<td> <%= c.TechUsed %> </td>
+			<td> <%= c.Special %> </td>
+			<td> <%= c.Grades %> </td>
+			<td> <%= c.Competition %> </td>
+			<td> <%= c.Session %> </td>
+			<td> <%= c.CalendarYear%> </td>
+			<td> <%= c.Facility %> </td>
+			<td> <%= c.Room %> </td>
+			<td> <%= c.InstructorFirstName %> </td>
+			<td> <%= c.InstructorLastName %> </td>
+			<td> <%= c.InstructorEmail %> </td>
+			<td> <%= c.InstructorPhone %> </td>
+			<td> <%= c.DaysOfWeek %> </td>
+			<td> <%= c.WeekOfYear %> </td>
+			<td> <%= c.StartTime %> </td>
+			<td> <%= c.EndTime %> </td>
+			<td> <%= c.DurationTime %> </td>
+			<td> <%= c.StartDate %> </td>
+			<td> <%= c.EndDate %> </td>
+			<td> <%= c.DurationWeeks %> </td>
+		</tr>
+	<% end %>
+	</thead>
+</table>
+
+<br>
+<%= link_to "Edit Table Information", edit_cclass_path(@cclass) %>
+<br>
+<%= link_to "Delete Table information", cclass_path(@cclass), data: {:confirm => 'Are you sure?'}, :method => :delete%>

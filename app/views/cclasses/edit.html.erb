@@ -1,0 +1,77 @@
+<h1>Edit Class' Form</h1>
+
+<%= form_for(@cclass, url: { :action => "update" }) do |c| %>
+	<%= c.label :Class_Name, "Class Name" %>
+	<%= c.text_field :Class_Name %>
+	<br>
+	<%= c.label :Model, "Model" %>
+	<%= c.text_field :Model %>
+	<br>
+	<%= c.label :Description, "Description" %>
+	<%= c.text_field :Description %>
+	<br>
+	<%= c.label :SkillLevel, "Skill Level" %>
+	<%= c.text_field :SkillLevel %>
+	<br>
+	<%= c.label :TechUsed, "Technology Used" %>
+	<%= c.text_field :TechUsed %>
+	<br>
+	<%= c.label :Special, "Special?" %>
+	<%= c.text_field :Special %>
+	<br>
+	<%= c.label :Grades, "Grades" %>
+	<%= c.text_field :Grades %>
+	<br>
+	<%= c.label :Competition, "Competition" %>
+	<%= c.text_field :Competition %>
+	<br>
+	<%= c.label :Session, "Session" %>
+	<%= c.text_field :Session %>
+	<br>
+	<%= c.label :CalendarYear, "Year" %>
+	<%= c.text_field :CalendarYear %>
+	<br>
+	<%= c.label :Facility, "Facility" %>
+	<%= c.text_field :Facility %>
+	<br>
+	<%= c.label :Room, "Room" %>
+	<%= c.text_field :Room %>
+	<br>
+	<%= c.label :InstructorFirstName, "Instructor First Name" %>
+	<%= c.text_field :InstructorFirstName %>
+	<br>
+	<%= c.label :InstructorLastName, "Instructor Last Name" %>
+	<%= c.text_field :InstructorLastName %>
+	<br>
+	<%= c.label :InstructorEmail, "Instructor Email" %>
+	<%= c.text_field :InstructorEmail %>
+	<br>
+	<%= c.label :InstructorPhone, "Instructor Phone" %>
+	<%= c.text_field :InstructorPhone %>
+	<br>
+	<%= c.label :DaysOfWeek, "Days" %>
+	<%= c.text_field :DaysOfWeek %>
+	<br>
+	<%= c.label :WeekOfYear, "Weeks" %>
+	<%= c.text_field :WeekOfYear %>
+	<br>
+	<%= c.label :StartTime, "Start Time" %>
+	<%= c.text_field :StartTime %>
+	<br>
+	<%= c.label :EndTime, "End Time" %>
+	<%= c.text_field :EndTime %>
+	<br>
+	<%= c.label :DurationTime, "Duration in time" %>
+	<%= c.text_field :DurationTime %>
+	<br>
+	<%= c.label :StartDate, "Start date" %>
+	<%= c.text_field :StartDate %>
+	<br>
+	<%= c.label :EndDate, "End Date" %>
+	<%= c.text_field :EndDate %>
+	<br>
+	<%= c.label :DurationWeeks, "Duration in weeks" %>
+	<%= c.text_field :DurationWeeks %>
+	<br>
+	<%= c.submit "Edit Information" %>
+<% end %>

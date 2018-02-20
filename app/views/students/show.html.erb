@@ -15,6 +15,7 @@
 		<th> Gender </th>
 	<% Array(@student).each do |s| %>
 		<tr>
+
 			<td> <%= s.FirstName %> </td>
 			<td> <%= s.LastName %> </td>
 			<td> <%= s.NickName %> </td>
@@ -28,3 +29,8 @@
 	<% end %>
 	</thead>
 </table>
+
+<br>
+<%= link_to "Edit Table Information", edit_student_path(@student) %>
+<br>
+<%= link_to "Delete Table information", student_path(@student), data: {:confirm => 'Are you sure?'}, :method => :delete%>

@@ -1,0 +1,9 @@
+<h1> Classes' Index </h1>
+
+<%= link_to "Classes' Form", new_cclass_path %>
+
+<ol> Classes
+	<% @cclass.each do |c| %>
+		<li><%= link_to c.Class_Name, cclass_path(c.id) %> </li>
+	<% end %>
+</ol>

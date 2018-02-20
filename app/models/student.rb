@@ -1,4 +1,6 @@
 class Student < ApplicationRecord
-	has_many :Enrollments
-	has_many :ClassGroups, through: :Enrollments
+
+	has_many :enrollments
+	has_many :cclasses, through: :enrollments
+	
 end

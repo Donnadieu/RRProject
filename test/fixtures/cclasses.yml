@@ -1,0 +1,53 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  Name: MyString
+  Model: MyString
+  Description: MyText
+  SkillLevel: MyString
+  TechUsed: MyString
+  Special: MyString
+  Grades: MyString
+  Competition: MyString
+  Session: MyString
+  CalendarYear: MyString
+  Facility: MyString
+  Room: MyString
+  InstructorFirstName: MyString
+  InstructorLastName: MyString
+  InstructorEmail: MyString
+  InstructorPhone: MyString
+  DaysOfWeek: MyString
+  WeekOfYear: MyString
+  StartTime: 2018-02-18 14:26:40
+  EndTime: 2018-02-18 14:26:40
+  DurationTime: 1
+  StartDate: 2018-02-18
+  EndDate: 2018-02-18
+  DurationWeeks: 1
+
+two:
+  Name: MyString
+  Model: MyString
+  Description: MyText
+  SkillLevel: MyString
+  TechUsed: MyString
+  Special: MyString
+  Grades: MyString
+  Competition: MyString
+  Session: MyString
+  CalendarYear: MyString
+  Facility: MyString
+  Room: MyString
+  InstructorFirstName: MyString
+  InstructorLastName: MyString
+  InstructorEmail: MyString
+  InstructorPhone: MyString
+  DaysOfWeek: MyString
+  WeekOfYear: MyString
+  StartTime: 2018-02-18 14:26:40
+  EndTime: 2018-02-18 14:26:40
+  DurationTime: 1
+  StartDate: 2018-02-18
+  EndDate: 2018-02-18
+  DurationWeeks: 1
